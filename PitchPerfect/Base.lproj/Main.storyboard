@@ -48,6 +48,9 @@
                             <constraint firstItem="3na-KD-LCE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SEE-UR-qeM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="7zy-9A-LfL" id="1Ut-If-EwR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
