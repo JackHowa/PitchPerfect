@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(_ sender: Any) {
         print("record button was pressed")
+        recordingLabel.text = "Recording In Progress"
     }
 
 }
