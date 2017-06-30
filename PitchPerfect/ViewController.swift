@@ -39,6 +39,7 @@ class ViewController: UIViewController {
 
     @IBAction func stopRecording(_ sender: Any) {
         recordingLabel.text = "Tap To Record"
+        recordingButton.isEnabled = true
         
     }
 }
