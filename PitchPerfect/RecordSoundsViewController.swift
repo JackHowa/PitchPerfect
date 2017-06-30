@@ -38,6 +38,7 @@ class RecordSoundsViewController: UIViewController {
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
+        print(filePath as Any)
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
@@ -51,6 +52,10 @@ class RecordSoundsViewController: UIViewController {
     @IBAction func stopRecording(_ sender: Any) {
         recordingLabel.text = "Tap To Record"
         recordingButton.isEnabled = true
+        
+        audioRecorder.stop()
+        let audioSession = AVAudioSession.sharedInstance()
+        try! audioSession.setActive(false)
         
     }
 }
