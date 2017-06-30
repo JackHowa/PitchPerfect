@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // will run after viewDidLoad
+        stopRecordingButton.isEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,10 +33,13 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(_ sender: Any) {
         recordingLabel.text = "Recording In Progress"
+        recordingButton.isEnabled = false
+        stopRecordingButton.isEnabled = true
     }
 
     @IBAction func stopRecording(_ sender: Any) {
         recordingLabel.text = "Tap To Record"
+        
     }
 }
 
