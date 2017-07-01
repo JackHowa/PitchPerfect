@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1132.5" y="138.38028169014083"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="ter-NQ-q9f">
             <objects>
-                <viewController id="oVD-QO-4i0" sceneMemberID="viewController">
+                <viewController id="oVD-QO-4i0" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g2Z-Mf-g10"/>
                         <viewControllerLayoutGuide type="bottom" id="5fC-oM-1ar"/>
