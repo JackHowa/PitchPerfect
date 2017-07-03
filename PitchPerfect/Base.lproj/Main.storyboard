@@ -83,14 +83,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ozg-bv-Gq8">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="126"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arG-Wp-V5h" userLabel="Slow Button">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arG-Wp-V5h" userLabel="Snail Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="144" height="126"/>
                                                 <state key="normal" image="Slow"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="oVD-QO-4i0" eventType="touchUpInside" id="KkN-GB-4K1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwt-Lt-SyD" userLabel="Fast Button">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwt-Lt-SyD" userLabel="Rabbit Button">
                                                 <rect key="frame" x="144" y="0.0" width="144" height="126"/>
                                                 <state key="normal" image="Fast"/>
                                                 <connections>
@@ -143,7 +143,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Crm-38-2tS">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="126"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kM-1M-PJy" userLabel="Pause Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kM-1M-PJy" userLabel="Stop Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="288" height="126"/>
                                                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                                         <state key="normal" image="Stop"/>
@@ -167,13 +167,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chipmunkButton" destination="of2-6G-Z2n" id="vfq-gJ-9V1"/>
                         <outlet property="echoButton" destination="nPK-jJ-O2G" id="f7A-uF-Dna"/>
-                        <outlet property="fastButton" destination="Rwt-Lt-SyD" id="igm-pM-CKT"/>
-                        <outlet property="highPitchButton" destination="of2-6G-Z2n" id="KPn-Zp-SAo"/>
-                        <outlet property="lowPitchButton" destination="HSV-7S-nG4" id="dKU-O3-YAw"/>
-                        <outlet property="pauseButton" destination="5kM-1M-PJy" id="ems-aS-KYO"/>
+                        <outlet property="rabbitButton" destination="Rwt-Lt-SyD" id="sHE-vn-GL5"/>
                         <outlet property="reverbButton" destination="Sfm-WZ-pb2" id="GCC-YV-LTz"/>
-                        <outlet property="slowButton" destination="arG-Wp-V5h" id="yL7-Go-dK9"/>
+                        <outlet property="snailButton" destination="arG-Wp-V5h" id="sTJ-wS-pUV"/>
+                        <outlet property="stopButton" destination="5kM-1M-PJy" id="xh5-cw-Zv2"/>
+                        <outlet property="vaderButton" destination="HSV-7S-nG4" id="Evc-jm-hTi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qom-hf-LHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
